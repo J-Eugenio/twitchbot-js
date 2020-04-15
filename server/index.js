@@ -32,7 +32,7 @@ client.on('connected', (address, port) =>{
 })
 
 //Parametro "chat" - Captura oque e digitado no chat
-//e guarda em message, assim pode-se congifurar comandos
+//e guarda em message, assim pode-se configurar comandos
 client.on("chat", function (channel, user, message, self) {
     if (message === "Ola") {
         client.action("canal_twitch", user["display-name"] + " seja bem vindo!")
